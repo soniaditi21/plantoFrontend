@@ -1,7 +1,7 @@
 
 
 import axios from 'axios';
-import products from '../../../server/model/productSchema';
+
 
 
 const url = 'https://plantobyaditi.herokuapp.com';
