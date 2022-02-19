@@ -18,7 +18,7 @@ export const getCeramicPots = () =>  async (dispatch) => {
 
 export const getCeramicPotDetails = (id) => async (dispatch) => {
       try{
-            const { data } =  await axios.get(`/ceramicpot/${id}`);
+            const { data } =  await axios.get(`${url}/ceramicpot/${id}`);
             dispatch({type: action.GET_CERAMIC_POT_DETAIL_SUCCESS, payload: data});
       } catch(error){
             dispatch({type: action.GET_CERAMIC_POT_DETAIL_FAIL, payload: error.response });

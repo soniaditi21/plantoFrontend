@@ -81,7 +81,7 @@ export const hsAddToCart = (id) => async (dispatch) => {
 
 export const smAddToCart = (id) => async (dispatch) => {
   try{
-    const {data} =await axios.get(`/soilManure/${id}`);
+    const {data} =await axios.get(`${url}/soilManure/${id}`);
     dispatch({type : actionTypes.ADD_TO_CART, payload: data})
   } catch(error){
     console.log('Error while calling sm add to cart');

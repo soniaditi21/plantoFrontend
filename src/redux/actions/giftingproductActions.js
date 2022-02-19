@@ -18,7 +18,7 @@ export const getGiftingProducts = () =>  async (dispatch) => {
 
 export const getGiftingProductDetails = (id) => async (dispatch) => {
       try{
-            const { data } =  await axios.get(`/giftingproduct/${id}`);
+            const { data } =  await axios.get(`${url}/giftingproduct/${id}`);
             dispatch({type: action.GET_GIFTING_PRODUCT_DETAIL_SUCCESS, payload: data});
       } catch(error){
             dispatch({type: action.GET_GIFTING_PRODUCT_DETAIL_FAIL, payload: error.response });

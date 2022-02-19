@@ -18,7 +18,7 @@ export const getHerbSeeds = () =>  async (dispatch) => {
 
 export const getHerbSeedDetails = (id) => async (dispatch) => {
       try{
-            const { data } =  await axios.get(`/herbseed/${id}`);
+            const { data } =  await axios.get(`${url}/herbseed/${id}`);
             dispatch({type: action.GET_HERB_SEED_DETAIL_SUCCESS, payload: data});
       } catch(error){
             dispatch({type: action.GET_HERB_SEED_DETAIL_FAIL, payload: error.response });

@@ -15,7 +15,7 @@ export const getIndoorPlants = () => async (dispatch) => {
 
 export const getIndoorPlantDetails = (id) => async(dispatch) => {
         try{
-          const {data} = await axios.get(`/indoorplant/${id}`);
+          const {data} = await axios.get(`${url}/indoorplant/${id}`);
           dispatch({type: action.GET_INDOOR_PLANT_DETAIL_SUCCESS, payload: data});
 
         } catch(error){

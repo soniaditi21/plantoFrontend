@@ -16,7 +16,7 @@ export const getLowMaintenancePlants = () =>  async (dispatch) => {
 
 export const getLowMaintenancePlantDetails = (id) => async (dispatch) => {
       try{
-            const { data } =  await axios.get(`/lowmaintenanceplant/${id}`);
+            const { data } =  await axios.get(`${url}/lowmaintenanceplant/${id}`);
          dispatch({type: action.GET_LOW_MAINTENANCE_PLANT_DETAILS_SUCCESS, payload: data});
       } catch(error){
          dispatch({type :action.GET_LOW_MAINTENANCE_PLANT_DETAILS_FAIL, payload: error.response});
