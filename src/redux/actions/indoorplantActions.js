@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as action from '../constants/indoorplantConstant';
 
 //const url = 'http://localhost:5000';
-const url = '';
+const url = 'https://plantobyaditi.herokuapp.com';
 export const getIndoorPlants = () => async (dispatch) => {
           try{
              const {data} = await axios.get(`${url}/indoorplants`);

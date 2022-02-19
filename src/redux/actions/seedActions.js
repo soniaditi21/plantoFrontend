@@ -3,7 +3,7 @@ import * as action from '../constants/seedConstant';
 
 
 //const url = 'http://localhost:5000';
-const url = '';
+const url = 'https://plantobyaditi.herokuapp.com';
 export const getSeeds = () =>  async (dispatch) => {
    try{ 
         const { data } =  await axios.get(`${url}/seeds`);

@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as action from '../constants/lowmaintenanceplantConstant.js';
 
 //const url = 'http://localhost:5000';
-const url = '';
+const url = 'https://plantobyaditi.herokuapp.com';
 
 export const getLowMaintenancePlants = () =>  async (dispatch) => {
    try{ 

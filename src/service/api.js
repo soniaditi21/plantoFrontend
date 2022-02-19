@@ -1,6 +1,7 @@
 
 
 import axios from 'axios';
+import products from '../../../server/model/productSchema';
 
 
 const url = 'https://plantobyaditi.herokuapp.com';
@@ -26,7 +27,9 @@ export const authenticateLogin = async (user) => {
 
 export const getProductById = async (id) => {
   try {
+    console.log(url);
       return await axios.get(`${url}/product/${id}`);
+   
   } catch (error) {
       console.log('Error while getting product by id response', error);
   }
