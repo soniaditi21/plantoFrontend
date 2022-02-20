@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 
-import NavbarHead from './NavbarHead.js';
+import NavbarHead from './NavbarHead.jsx';
 import Home from './Home/Home';
 import Cart from './Cart/Cart';
 import { TemplateProvider } from './TemplateProvider';
