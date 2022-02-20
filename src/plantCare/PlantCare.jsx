@@ -169,7 +169,7 @@ const useStyle = makeStyles({
                         <Typography className={classes.insideTypo}>Backed by a total satisfaction guarantee and amazing customer support.</Typography>
 
                         <Box className={classes.inputarea}>
-                        <TextField onChange={(e) => onValueChange(e)} id="outlined-basic"  variant="outlined"  name='zip' label='Enter Zip' /> 
+                        <TextField onChange={(e) => onValueChange(e)} id="outlined-basic"   name='zip' label='Enter Zip' /> 
                         <Button className={classes.srchBtn} onClick={() => openLocationDetail()}>Search</Button>
                         </Box>
                     </Box>
