@@ -117,7 +117,7 @@ function SoilsManure() {
      >
       {soilManures.map(soilManure => (
    
-         <Grid item md={6} >
+         <Grid item xs={12} sm={6} md={4} lg={4}>
       
        
       <Link to= {`soilManure/${soilManure.id}`} style={{textDecoration: 'none'}}>
