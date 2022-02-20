@@ -106,7 +106,7 @@ function AirPurifying() {
     <Box>
       <Box style={{ margin: '5% 2% 2% 2%', width: '100%', padding: '4%', textAlign: 'center' }}>
         <Typography style={{ fontSize: '40px', fontFamily: 'Times Roman', textShadow: '#00403C 5px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}>Air Purifying Plants</Typography>
-        <Typography style={{ fontSize: '20px', fontFamily: 'Times Roman', textShadow: '#00403C 5px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px', }}>Air purifying plants are a package of benefits. Planting them is the most cost-effective and healthy way to breathe pure and better air. It also helps improve the atmosphere and productivity around you.</Typography>
+        <Typography style={{ fontSize: '20px', fontFamily: 'Times Roman', textShadow: '#00403C 5px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}>Air purifying plants are a package of benefits. Planting them is the most cost-effective and healthy way to breathe pure and better air. It also helps improve the atmosphere and productivity around you.</Typography>
       </Box>
     <Grid container rowSpacing={{ xs: 1, sm: 1, md: 3 }} 
     alignItems="center"

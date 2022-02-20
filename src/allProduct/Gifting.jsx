@@ -111,9 +111,9 @@ function Gifting() {
 
   return (
     <Box>
-      <Box className={classes.topContainer}>
-        <Typography className={classes.title}><h1><b>Gifting Plants</b></h1></Typography>
-        <Typography className={classes.titleDescription}><h3>Gifting plants are a package of benefits. Planting them is the most cost-effective and healthy way to breathe pure and better air. It also helps improve the atmosphere and productivity around you.</h3></Typography>
+      <Box style={{ margin: '5% 2% 2% 2%', width: '100%', padding: '4%', textAlign: 'center' }}>
+        <Typography  style={{ fontSize: '40px', fontFamily: 'Times Roman', textShadow: '#00403C 5px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}><h1><b>Gifting Plants</b></h1></Typography>
+        <Typography  style={{ fontSize: '20px', fontFamily: 'Times Roman', textShadow: '#00403C 5px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}><h3>Gifting plants are a package of benefits. Planting them is the most cost-effective and healthy way to breathe pure and better air. It also helps improve the atmosphere and productivity around you.</h3></Typography>
       </Box>
     <Grid container rowSpacing={{ xs: 1, sm: 3, md: 3 }} 
     alignItems="center"
@@ -127,11 +127,11 @@ function Gifting() {
       
        
       <Link to= {`giftingproduct/${giftingproduct.id}`} style={{textDecoration: 'none'}}>
-      <Item className={classes.itemContainer} style={{backgroundColor: '#00403C', padding: '5% 1% 7% 1%', backgroundImage: `linear-gradient(to bottom,  rgba(0, 0, 0, 0.377) 0%,rgba(0, 0, 0, 0.866) 100%)`, borderRadius: '30px'}}>
+      <Item  style={{backgroundColor: '#00403C', padding: '5% 2% 7% 1%', backgroundImage: `linear-gradient(to bottom,  rgba(0, 0, 0, 0.377) 0%,rgba(0, 0, 0, 0.866) 100%)`, borderRadius: '30px',  width: '90%', marginRight: '2%', '&:hover': { color:'white', boxShadow: '#88DAD2 0px 44px 145px, #88DAD2 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',  }}}>
           <Box > 
-          <img className={classes.img} src={giftingproduct.url1} alt="" />
-          <Typography className={classes.itemTitle}>{giftingproduct.title.shortTitle}</Typography>
-          <Typography className={classes.price}><strike style={{color: 'grey', marginRight: '2%'}}>₹{giftingproduct.price.strikeprice}</strike> ₹{giftingproduct.price.actualprice}</Typography>
+          <img style={{ width: '80%' }} src={giftingproduct.url1} alt="" />
+          <Typography style={{color: 'ivory', fontSize: '24px', fontFamily: 'Times Roman' }}>{giftingproduct.title.shortTitle}</Typography>
+          <Typography style={{color: 'ivory', fontSize: '20px'}}><strike style={{color: 'grey', marginRight: '2%'}}>₹{giftingproduct.price.strikeprice}</strike> ₹{giftingproduct.price.actualprice}</Typography>
          <Link to='/cart' style={{textDecoration: 'none'}}>  <Button className={classes.addToCart} onClick={() => gfAddToCartItems(giftingproduct.id)} style={{ 
             backgroundColor: '#096C6E',
         color: 'ivory',
