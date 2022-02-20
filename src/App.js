@@ -73,7 +73,7 @@ function App() {
 
 
   <Route exact path='/PlantCare' component={PlantCare}/>
-  <Route exact path='/gardenerNearYou' component={GardenerNearYou}/>
+  <Route exact path='/GardenerNearYou' component={GardenerNearYou}/>
 
      </Switch>
 
