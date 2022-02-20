@@ -4,7 +4,7 @@
 
 
 import React, {  useState, useContext } from 'react';
-import './NavbarHead.css';
+
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import {  useSelector } from 'react-redux'
@@ -28,6 +28,14 @@ const useStyles = makeStyles((theme) => ({
     root: {
          textAlign: 'right'
     },
+    // .carouseldiv{
+    //   margin: 3%;
+    //   width: 90%;
+    //   height: 90%;
+    
+    
+    // }
+    
     menuButton: {
         marginRight: theme.spacing(2),
         color: 'black'
