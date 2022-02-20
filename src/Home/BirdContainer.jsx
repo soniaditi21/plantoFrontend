@@ -85,9 +85,9 @@ const BirdContainer = () => {
 			
 	<Typography style={{  
 		fontFamily: `'Shizuru', cursive`,
-	color: 'rgb(24, 36, 29)',
+	color: 'white',
 	fontDisplay: 'auto',
-	fontSize: '8rem',
+	fontSize: '4rem',
 	letterSpacing: '-2px',
 	position: 'relative',
 	zIndex: '4',
