@@ -152,7 +152,7 @@ const useStyle = makeStyles({
     const openLocationDetail = () => {
         
         if(zip !== ''){
-            window.open('https://planto-plantcare-and-service.netlify.app/GardenerNearYou'); 
+            window.open('./GardenerNearYou'); 
         }
         else{
             alert('Enter Valid Zip Code');

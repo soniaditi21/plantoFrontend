@@ -63,7 +63,7 @@ const useStyle = makeStyles({
   component: {
     height: '100%',
     width: '95vh',
-    backgroundImage: `linear-gradient(to bottom,  rgba(33, 139, 226, 0.222) 0%,rgba(214, 231, 231, 0.966) 100%), url('https://images.unsplash.com/photo-1446824505046-e43605ffb17f')`,
+    backgroundImage: `linear-gradient(to bottom,  rgba(33, 139, 226, 0.222) 0%,rgba(214, 231, 231, 0.966) 100%),)`,
   },
   mainbox: {
     display: 'flex',
@@ -199,10 +199,10 @@ const onValueChange = (e) => {
       <DialogContent className={classes.component} >
         <Box className={classes.mainbox}>
 
-          <Box className={classes.image}>
+          {/* <Box className={classes.image}>
           <Typography variant="h5" style={{color: 'black', fontWeight: 600}}>{account.heading}</Typography>
           <Typography style={{marginTop: '25px', color: 'black', fontWeight: 600}}>{account.subHeading}</Typography>
-          </Box>
+          </Box> */}
 {
   account.view === 'login' ?
           <Box className={classes.login}>
@@ -213,8 +213,8 @@ const onValueChange = (e) => {
            }
            <Typography className={classes.text}>By continuing, you agree to our Terms of Use and Privacy Policy.</Typography>
            <Button onClick={() => loginUser()} variant='contained' className={classes.loginBtn} >Login</Button>
-           <Typography className={classes.text} style={{textAlign: 'center'}}>OR</Typography>
-           <Button variant='contained' className={classes.requestBtn}>Request OTP</Button>
+           {/* <Typography className={classes.text} style={{textAlign: 'center'}}>OR</Typography>
+           <Button variant='contained' className={classes.requestBtn}>Request OTP</Button> */}
            <Typography onClick={() => toggleUserAccount()} className={classes.createText}> New User, Create an Account </Typography>
           </Box> :
 
