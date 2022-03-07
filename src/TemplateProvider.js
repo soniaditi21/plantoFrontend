@@ -10,7 +10,7 @@ export const TemplateProvider = ({children}) => {
   const theme = createMuiTheme({
     overrides: {
       MuiDialog: {
-        paperWidthSum: {
+        paperWidthSm: {
           maxWidth: 'unset',
           
         },
