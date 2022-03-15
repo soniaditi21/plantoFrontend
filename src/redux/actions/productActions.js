@@ -4,6 +4,7 @@ import * as action from '../constants/productConstant';
 //const url = 'http://localhost:5000';
 
 const url = 'https://plantobyaditi.herokuapp.com';
+
 export const getProducts = () =>  async (dispatch) => {
    try{ 
         const { data } =  await axios.get(`${url}/products`);

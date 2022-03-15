@@ -138,24 +138,24 @@ const useStyle = makeStyles({
     }, 
 });
 
- const PlantCare = () => {
+ const PlantCare = ({history}) => {
     const classes=useStyle();
 
     const [zip, setZip] = useState('');
-
+  const [error,setError]= useState(false);
    const  onValueChange = (e) => {
         setZip({...zip, [e.target.name]: e.target.value});
-      
-      console.log(zip.length);
     }
 
     const openLocationDetail = () => {
         
         if(zip !== ''){
-            window.open('./GardenerNearYou'); 
+            history.push({
+                pathname: '/GardenerNearYou'
+            });
         }
         else{
-            alert('Enter Valid Zip Code');
+            setError(true);
         }
        
     }
@@ -169,8 +169,11 @@ const useStyle = makeStyles({
                         <Typography className={classes.insideTypo}>Backed by a total satisfaction guarantee and amazing customer support.</Typography>
 
                         <Box className={classes.inputarea}>
-                        <TextField onChange={(e) => onValueChange(e)} id="outlined-basic"   name='zip' label='Enter Zip' /> 
+                        <TextField onChange={(e) => onValueChange(e)} id="outlined-basic"   name='zip' label='Enter Pin' /> 
                         <Button className={classes.srchBtn} onClick={() => openLocationDetail()}>Search</Button>
+                        {
+                            error && <Typography style={{color:'red', textAlign:'left',marginLeft: '15%',fontSize:'12px'}}>Enter Valid Pin</Typography>
+                        }
                         </Box>
                     </Box>
              </Box>
