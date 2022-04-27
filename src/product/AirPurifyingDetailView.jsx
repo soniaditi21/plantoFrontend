@@ -231,6 +231,7 @@ const DetailView = ({ history, match }) => {
       pathanme: "/cart",
     });
   };
+  
   const buyNow = async () => {
     let response = await payUsingPaytm({
       amount: 500,

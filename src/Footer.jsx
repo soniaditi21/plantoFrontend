@@ -232,7 +232,6 @@ const Footer = () => {
 
            <Divider/>
 
-              <Box style={{textAlign: 'center', marginTop: '2%'}}><Typography style={{fontSize: '12px'}}>Made By Aditi Soni.</Typography></Box>
         </Box>
     );
 }

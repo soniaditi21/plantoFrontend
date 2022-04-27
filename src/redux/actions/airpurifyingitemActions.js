@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as action from '../constants/airpurifyingitemsConstant';
 
-//const url = 'http://localhost:5000';
+
 const url = 'https://plantobyaditi.herokuapp.com';
 
 export const getAirPurifyingItems = () => async (dispatch) => {
